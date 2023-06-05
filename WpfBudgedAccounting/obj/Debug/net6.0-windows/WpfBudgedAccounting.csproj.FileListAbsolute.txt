@@ -19,3 +19,24 @@ C:\mpt\С#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\refi
 C:\mpt\С#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting.pdb
 C:\mpt\С#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting.genruntimeconfig.cache
 C:\mpt\С#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\ref\WpfBudgedAccounting.dll
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\bin\Debug\net6.0-windows\WpfBudgedAccounting.exe
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\bin\Debug\net6.0-windows\WpfBudgedAccounting.deps.json
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\bin\Debug\net6.0-windows\WpfBudgedAccounting.runtimeconfig.json
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\bin\Debug\net6.0-windows\WpfBudgedAccounting.dll
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\bin\Debug\net6.0-windows\WpfBudgedAccounting.pdb
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting.csproj.AssemblyReference.cache
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\App.g.cs
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting_MarkupCompile.cache
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting_MarkupCompile.lref
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\MainWindow.baml
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting.g.resources
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting.GeneratedMSBuildEditorConfig.editorconfig
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting.AssemblyInfoInputs.cache
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting.AssemblyInfo.cs
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting.csproj.CoreCompileInputs.cache
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting.dll
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\refint\WpfBudgedAccounting.dll
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting.pdb
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting.genruntimeconfig.cache
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\ref\WpfBudgedAccounting.dll

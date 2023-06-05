@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfBudgedAccounting"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" MinHeight="500" MinWidth="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition MaxWidth="300"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -20,57 +20,46 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition Height="120"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <!-- Выбор даты записи -->
         <DatePicker x:Name="Calendar"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
                     Grid.Column="0"
                     Grid.Row="0"
-                    Grid.ColumnSpan="2"
-                    Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"/>
+                    Grid.ColumnSpan="2"/>
 
         <!-- Левая панелька с ДатаГридом и итоговым кол-вом денег -->
         <DataGrid x:Name="Data"
-                  d:ItemsSource="{d:SampleData ItemCount=5}"
                   Grid.Row="1"
                   Grid.Column="0"
-                  Grid.RowSpan="6"/>
+                  Grid.RowSpan="10"/>
         <TextBlock x:Name="Amount"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   Grid.Row="7"
+                   Grid.Row="11"
                    Grid.Column="0"
                    Text="Итого: 0"/>
 
         <!-- Нейминг новой записи -->
-        <TextBlock x:Name="asdas"
-                   Grid.Column="1"
-                   Grid.Row="1"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Top"
-                   Text="Имя записи"
-                   />
-        <TextBox x:Name="NoteName"
-                 Grid.Row="1"
-                 Grid.Column="1"
-                 HorizontalAlignment="Center"
-                 VerticalAlignment="Center"
-                 Text="Название записи"
-                 />
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="Имя записи" TextAlignment="Center" Margin="5 5 5 5"/>
+        <TextBox x:Name="NoteName" Grid.Row="2" Grid.Column="1" TextAlignment="Center" Margin="5 5 5 5"/>
 
         <!-- Выбор/создание типа записи -->
-        <ComboBox Grid.Column="1" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Top" Width="186"/>
-        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Center" Margin="0,32,0,0" Grid.Row="3" Width="186"/>
+        <TextBlock Grid.Column="1" Grid.Row="3" Text="Тип записи" TextAlignment="Center"/>
+        <ComboBox Grid.Column="1" Grid.Row="4" Margin="5 5 5 5"/>
+        <Button Grid.Column="1" Grid.Row="5" Margin="5 5 5 5" Content="Добавить новый тип записи"/>
 
-        <!-- Кол-во денег в записи -->
-        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Grid.Row="4" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="233,36,0,0" Grid.Row="4" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+       <!-- Кол-во денег в записи -->
+        <TextBlock Grid.Column="1" Grid.Row="6" TextAlignment="Center" Text="gold" Margin="5 5 5 5"/>
+        <TextBox Grid.Column="1" Grid.Row="7" TextWrapping="Wrap" Margin="5 5 5 5"/>
 
         <!-- CRUD-операции -->
-        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Center" Margin="0,34,0,0" Grid.RowSpan="2" Grid.Row="6" VerticalAlignment="Top"/>
-        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Center" Grid.Row="7" VerticalAlignment="Top"/>
-        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Center" Grid.Row="7" VerticalAlignment="Bottom"/>
+        <Button Grid.Column="1" Content="Button" Margin="5 5 5 5" Grid.Row="9"/>
+        <Button Grid.Column="1" Content="Button" Margin="5 5 5 5" Grid.Row="10"/>
+        <Button Grid.Column="1" Content="Button" Margin="5 5 5 5" Grid.Row="11"/>
 
     </Grid>
 </Window>
