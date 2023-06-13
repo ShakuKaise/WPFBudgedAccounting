@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "N58lGYi3nR581ff78q3JpSJGJIzNFZFP9UelxRWqNxUUhepfGk/eaS0xnF81hgP9hBIF6RzfUsDgNAarj9SVLg==",
+  "dgSpecHash": "LuzTvnsUOmnQl8/uAD/oGhYO1dBST9uSBRzCce1IQ2o0T/b9+ndJdn0icmCy85rC04pveg+hRwZQWZy5xsxjPw==",
   "success": true,
   "projectFilePath": "C:\\mpt\\2 курс 2 семестр\\C#\\WpfBudgedAccounting\\WpfBudgedAccounting\\WpfBudgedAccounting.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\uter\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

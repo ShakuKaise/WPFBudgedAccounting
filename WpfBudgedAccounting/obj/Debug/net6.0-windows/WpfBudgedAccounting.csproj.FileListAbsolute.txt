@@ -40,3 +40,8 @@ C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\ob
 C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting.pdb
 C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting.genruntimeconfig.cache
 C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\ref\WpfBudgedAccounting.dll
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\NoteTypeWindow.g.cs
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\NoteTypeWindow.baml
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\WpfBudgedAccounting.csproj.CopyComplete
+C:\mpt\2 курс 2 семестр\C#\WpfBudgedAccounting\WpfBudgedAccounting\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs

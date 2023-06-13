@@ -19,9 +19,16 @@ namespace WpfBudgedAccounting
     /// </summary>
     public partial class NoteTypeWindow : Window
     {
+        public string newType;
         public NoteTypeWindow()
         {
             InitializeComponent();
+        }
+
+        private void CreateNoteTypeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            newType = NoteTypeTxtBx.Text;
+            DialogResult = true;
         }
     }
 }

@@ -1,35 +1,55 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Markup;
 
 namespace WpfBudgedAccounting
 {
-    internal class Note
+    public class Note
     {
-        private string Title;
-        private string Type;
-        private double Money;
-
         public DateTime date { get; set; }
+        public string title { get; set; }
+        public string type { get; set; }
 
-        public string title
+        private int Money;
+        public int money
         {
-            get { return Title; }
-            set { Title = value; }
+            get => Money;
+            set
+            {
+                Money = value;
+                if (money < 0)
+                {
+                    isIncome = false;
+                }
+                else
+                {
+                    isIncome = true;
+                }
+            }
+        }
+        public bool isIncome { get; set; }
+
+        public Note (DateTime date, string title, string type, int money)
+        {
+            this.date = date;
+            this.title = title;
+            this.type = type;
+            this.money = money;
+            if (money < 0) isIncome = false;
+            else isIncome = true;
         }
 
-        public double money
-        {
-            get { return Money; }
-            set { Money = value; }
-        }
 
-        public string type
+
+
+        public Note()
         {
-            get { return Type; }
-            set { Type = value; }
+
         }
     }
 }

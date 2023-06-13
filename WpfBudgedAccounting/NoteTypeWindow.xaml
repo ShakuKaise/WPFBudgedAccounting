@@ -5,14 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfBudgedAccounting"
         mc:Ignorable="d"
-        Title="NoteTypeWindow" MinHeight="600" MinWidth="600" MaxHeight="600" MaxWidth="600">
+        Title="NoteTypeWindow" MinHeight="300" MinWidth="500" MaxHeight="300" MaxWidth="500">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
         <TextBlock
-            
+            Grid.Row="0"
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
-            Text="asdfasdf"
+            Text="Введите тип записи для добавления"
+            />
+        <TextBox x:Name="NoteTypeTxtBx"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"
+                 Grid.Row="1"
+                 Width="400"
+            />
+        <Button x:Name="CreateNoteTypeBtn"
+                Content="Создать новый тип записи"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Grid.Row="2"
+                Height="40"
+                Width="200" Click="CreateNoteTypeBtn_Click"
             />
     </Grid>
 </Window>
