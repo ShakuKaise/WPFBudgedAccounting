@@ -15,8 +15,8 @@ namespace WpfBudgedAccounting
         public string title { get; set; }
         public string type { get; set; }
 
-        private int Money;
-        public int money
+        private decimal Money;
+        public decimal money
         {
             get => Money;
             set
@@ -34,7 +34,7 @@ namespace WpfBudgedAccounting
         }
         public bool isIncome { get; set; }
 
-        public Note (DateTime date, string title, string type, int money)
+        public Note (DateTime date, string title, string type, decimal money)
         {
             this.date = date;
             this.title = title;

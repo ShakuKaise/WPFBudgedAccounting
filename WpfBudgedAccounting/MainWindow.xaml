@@ -9,6 +9,7 @@
         Title="MainWindow" MinHeight="500" MinWidth="800">
     <Window.Resources>
         <local:PositiveNumberConverter x:Key="PositiveNumberConverter"/>
+        <local:MyMultiValueConverter x:Key="MultiConverter"/>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
@@ -57,7 +58,7 @@
                    VerticalAlignment="Center"
                    Grid.Row="11"
                    Grid.Column="0"
-                   Text="Итого: 0"/>
+                   Text="{Binding Amount}"/>
 
         <!-- Нейминг новой записи -->
         <TextBlock Grid.Column="1" Grid.Row="1" Text="Имя записи" TextAlignment="Center" Margin="5 5 5 5"/>
@@ -73,7 +74,15 @@
         <TextBox x:Name="gold" Grid.Column="1" Grid.Row="7" TextWrapping="Wrap" Margin="5 5 5 5" Text="{Binding Money}"/>
 
         <!-- CRUD-операции -->
-        <Button x:Name="Create" Grid.Column="1" Content="Сохранить" Margin="5,5,5,5" Grid.Row="9" Command="{Binding CommandSave}" Grid.RowSpan="2"/>
+        <Button x:Name="Save" Grid.Column="1" Content="Сохранить" Margin="5,5,5,5" Grid.Row="9" Command="{Binding CommandSave}" Grid.RowSpan="2">
+            <Button.IsEnabled>
+                <MultiBinding Converter="{StaticResource MultiConverter}">
+                    <Binding ElementName="gold" Path="Text"></Binding>
+                    <Binding ElementName="TypesCmbBx" Path="Text"></Binding>
+                    <Binding ElementName="NoteName" Path="Text"></Binding>
+                </MultiBinding>
+            </Button.IsEnabled>
+        </Button>
         <Button x:Name="Delete" Grid.Column="1" Content="Удалить" Margin="5 5 5 5" Grid.Row="11" Command="{Binding CommandDelete}"/>
 
     </Grid>

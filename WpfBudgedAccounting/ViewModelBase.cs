@@ -21,13 +21,14 @@ namespace WpfBudgedAccounting
         {
             Notes = Serializer.Deserialize();
             Date = DateTime.Today;
+            UpCounter();
         }
 
 
         private DateTime _date = DateTime.Today;
         private string title = "";
         private string type = "";
-        private int money = 0;
+        private decimal money = 0;
         private bool isIncome;
         private ObservableCollection<Note> notesDays = new();
 
@@ -70,7 +71,7 @@ namespace WpfBudgedAccounting
             get => type; set => Set(ref type, value);
         }
 
-        public int Money
+        public decimal Money
         {
             get => money; set
             {
@@ -124,6 +125,7 @@ namespace WpfBudgedAccounting
         public void AddNote(Note note)
         {
             Notes.Add(note);
+            UpCounter();
             Serializer.Serialize(Notes);
         }
         
@@ -142,7 +144,7 @@ namespace WpfBudgedAccounting
                 Title = SelectedNote.title; 
                 Date = SelectedNote.date; 
                 Type = SelectedNote.type; 
-                Money = SelectedNote.money; 
+                Money = SelectedNote.money;
             }
         }
 
@@ -157,9 +159,32 @@ namespace WpfBudgedAccounting
                     if (SelectedNote == null) return;
                     RemoveNote(SelectedNote);
                     Serializer.Serialize(Notes);
+                    UpCounter();
 
                 });
             }
+        }
+
+        private string amount = "";
+        public string Amount
+        {
+            get => amount;
+            set
+            {
+                amount = $"Итого : {value}";
+                Set(ref amount, value);
+            }
+        }
+
+        private void UpCounter()
+        {
+            Amount = "";
+            decimal a = 0;
+            foreach (var item in Notes)
+            {
+                a += item.money;
+            }
+            Amount = a.ToString();
         }
 
         private RelayCommand commandSave;
@@ -185,6 +210,7 @@ namespace WpfBudgedAccounting
                 SelectedNote.type = Type;
                 SelectedNote.isIncome = IsIncome;
                 Serializer.Serialize(Notes);
+                UpCounter();
                 
             }
             else
